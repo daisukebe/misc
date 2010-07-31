@@ -6,7 +6,7 @@ $data = simplexml_load_file($url)
 
 foreach($data->item as $item){
 	echo $item->title,
-		' => ',
+		' -> ',
 		$item->children('hatena', true)->bookmarkcount,
 		'<br>';
 }
