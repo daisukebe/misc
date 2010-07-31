@@ -1,5 +1,5 @@
 <?php
-echo 'Hatena Bookmark RSS Test', '<br><br>';
+echo 'Hatena Bookmarkcount RSS Test', '<br><br>';
 $url = 'http://b.hatena.ne.jp/daisukebe/favorite.rss';
 $data = simplexml_load_file($url)
 	or die("xml parse error");
