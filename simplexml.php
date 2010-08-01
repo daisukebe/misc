@@ -5,7 +5,11 @@ $data = simplexml_load_file($url)
 	or die("xml parse error");
 
 foreach($data->item as $item){
-	echo $item->title,
+	echo '<a href=\'',
+		$item->link,
+		'\'>',
+		$item->title,
+		'</a>',
 		' -> ',
 		$item->children('hatena', true)->bookmarkcount,
 		'<br>';
